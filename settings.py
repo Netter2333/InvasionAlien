@@ -17,3 +17,10 @@ class Settings:
         self.bullet_height = 15
         self.bullet_color = (60, 60, 60)
         self.bullets_allowed = 3
+
+        #Missile settings
+        self.missile_speed = 0.8
+        self.missile_width = 6
+        self.missile_height = 30
+        self.missile_color = (174, 59, 34)
+        self.missiles_allowed = 1
