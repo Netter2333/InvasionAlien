@@ -1,4 +1,4 @@
-- NEW Misiles, disparar con otra tecla y poner un limite menor a las balas  (WIP)
+- NEW Misiles, disparar con otra tecla y poner un limite menor a las balas  (X)
 - UPD Aliens, agregar mas tipos de alien con distinta imagen y atributos opcionalmente (WIP)
-- MISC traducir todo a español, incluido nombre de repositorio a SuperInvasionAlien (WIP)
+- MISC traducir todo a español (WIP)
 - NEW Power ups (WIP)

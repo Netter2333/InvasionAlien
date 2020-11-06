@@ -1,15 +1,15 @@
 import pygame.font
 
 
-class Button:
+class DifficultyButton:
 
-    def __init__(self, ai_game, msg):
+    def __init__(self, ai_game):
         """Initialize button attributes."""
         self.screen = ai_game.screen
         self.screen_rect = self.screen.get_rect()
 
         # Set the dimensions and properties of the button
-        self.width, self.height = 200, 50
+        self.width, self.height = 200, 150
         self.button_color = (0, 255, 0)
         self.text_color = (255, 255, 255)
         self.font = pygame.font.SysFont(None, 48)
@@ -19,7 +19,7 @@ class Button:
         self.rect.center = self.screen_rect.center
 
         # The button message needs to be prepped only once.
-        self._prep_msg(msg)
+        self._prep_msg("Facil")
 
     def _prep_msg(self, msg):
         """Turn msg into a rendered image and center text on the button."""
