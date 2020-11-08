@@ -89,3 +89,5 @@ class Scoreboard:
         self.prep_level()
         self.prep_ships()
 
+    def get_highscore(self):
+        return self.high_score

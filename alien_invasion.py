@@ -76,7 +76,7 @@ class AlienInvasion:
         high_score_file = 'text_files/high_score.txt'
         try:
             with open(high_score_file, 'w') as f:
-                f.write(f"{self.sb.high_score()}")
+                f.write(f"{self.stats.high_score()}")
         except:
             print("Unexpected error")
 
@@ -84,7 +84,8 @@ class AlienInvasion:
         """Respond to keypresses and mouse events"""
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                self.save_high_score()
+                if self.stats.score > self.stats.high_score:
+                    self.save_high_score()
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
                 self._check_keydown_events(event)

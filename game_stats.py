@@ -8,17 +8,19 @@ class GameStats:
 
         # Start the game in an inactive state.
         self.game_active = False
+        self.high_score = 0
 
         # High score should never be reset.
         high_score_file = 'text_files/high_score.txt'
         try:
             with open(high_score_file, 'r') as f:
                 for line in f:
+                    line = line.split()
+                    high_scores = [int(i) for i in line]
                     if line:
-                        self.high_score = float(f.readline())
+                        self.high_score = high_scores[0]
         except FileNotFoundError:
             with open(high_score_file, 'w') as f:
-                self.high_score = 1
                 f.write(f"{self.high_score}")
 
     def reset_stats(self):
