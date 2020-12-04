@@ -1,7 +1,7 @@
 import pygame.font
 from pygame.sprite import Group
 
-from ship import Ship
+from ship import Ship, ShipLives
 
 class Scoreboard:
     """A class to report scoring information."""
@@ -15,7 +15,7 @@ class Scoreboard:
         self.stats = ai_game.stats
 
         # Font settings for scoring information.
-        self.text_color = (30, 30, 30)
+        self.text_color = (0, 143, 57)
         self.font = pygame.font.SysFont(None, 48)
 
         self.prep_images()

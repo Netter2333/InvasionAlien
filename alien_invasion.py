@@ -43,7 +43,7 @@ class AlienInvasion:
         self._create_fleet()
 
         # Set the background color.
-        self.bg_color = (230, 230, 230)
+        self.bg_color = (0, 0, 0)
 
         # Make the Play button.
         self.play_button = Button(self, "Jugar")

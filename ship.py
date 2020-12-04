@@ -46,3 +46,12 @@ class Ship(Sprite):
         """Center the ship on the screen."""
         self.rect.midbottom = self.screen_rect.midbottom
         self.x = float(self.rect.x)
+
+
+class ShipLives(Ship):
+    def __init__(self, ai_game):
+        # ai_game parameter refers to the current instance of the game class
+        """Initialize the ship and set its starting position."""
+        super().__init__()
+        self.image = pygame.image.load('images/ship_small.bmp')
+        self.rect = self.image.get_rect()
